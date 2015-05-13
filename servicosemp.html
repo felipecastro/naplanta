@@ -1,0 +1,14 @@
+<div class="row" id="listservicosemp"></div>
+<div class="row" id="pagenavigation"></div>
+<script>
+$( "ul li" ).removeClass( "active" );
+$( "ul li" ).addClass(function( index, currentClass ) {
+  var addedClass;
+ 
+  if ( currentClass === "linkser" ) {
+    addedClass = "active";
+  }
+ 
+  return addedClass;
+});
+</script>

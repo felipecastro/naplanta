@@ -1,0 +1,53 @@
+<!--[if lt IE 9]>
+<script>
+document.createElement('video');
+</script>
+<![endif]-->
+<style>
+@media screen and (max-device-width: 800px) {
+body { background: url(/assets/bkg.jpeg) #000 no-repeat center center fixed; }
+#bgvid { display: none; }
+}
+
+body {
+
+}
+
+video { display: block; }
+
+video#bgvid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(/assets/bkg.jpeg) no-repeat;
+background-size: cover;
+transition: 1s opacity;
+}
+</style>
+<video autoplay loop poster="/assets/bkg.jpeg" id="bgvid">
+<source src="/assets/bkgv.webm" type="video/webm">
+<source src="/assets/bkgv.mp4" type="video/mp4">
+</video>
+<div id="lbllocal"><h2>Na Planta</h2></div>
+
+<div class="panel panel-default">
+    <div class="panel-heading"><a href="">Onde proprietários e prestadores de serviço se encontram.</a></div>
+</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+            dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+            Aliquam in felis sit amet augue.</p>
+
+    <hr>
+
+<p>
+
+<button type="button" class="btn btn-primary btn-lg" >
+  Entre em contato
+</button>
+<hr>  
+
+
+<script>
+$( "ul li" ).removeClass( "active" );
+</script>
